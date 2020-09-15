@@ -8,5 +8,14 @@ namespace RobotsVsDinosaurs
 {
     class Herd
     {
+
+        public Herd(string type, double health, double energy, double attackPower)
+        {
+            string[] dinosaursToChooseFrom = new string[2]; 
+
+
+        }
+        
+           
     }
 }

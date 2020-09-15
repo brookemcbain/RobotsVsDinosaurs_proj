@@ -8,5 +8,14 @@ namespace RobotsVsDinosaurs
 {
     class Battlefield
     {
+        
+        public Battlefield(double attack)
+
+        {
+             
+
+
+        }
     }
+
 }

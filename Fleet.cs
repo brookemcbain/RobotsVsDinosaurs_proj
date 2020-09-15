@@ -8,5 +8,12 @@ namespace RobotsVsDinosaurs
 {
     class Fleet
     {
+        public Fleet()
+        {
+            Robot robotOne = new Robot();
+            Robot robotTwo = new Robot();
+            Robot robotThree = new Robot();
+        }
+       
     }
 }
