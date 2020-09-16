@@ -8,13 +8,28 @@ namespace RobotsVsDinosaurs
 {
     class Herd
     {
-
-        public Herd(string type, double health, double energy, double attackPower)
+        public List<Dinosaur> dinosaurToChooseFrom;
+        Random random = new Random();
+        public Herd()
         {
-            string[] dinosaursToChooseFrom = new string[2]; 
+            dinosaurToChooseFrom = new List<Dinosaur>();
+            Dinosaur dinoOne = new Dinosaur("T-Rex", 100, 100, 5);
+            Dinosaur dinoTwo = new Dinosaur("Brochiosaurus", 100, 100, 5);
+            Dinosaur dinoThree = new Dinosaur("Velociraptor", 100, 100, 5);
 
+            dinosaurToChooseFrom.Add(dinoOne);
+            dinosaurToChooseFrom.Add(dinoTwo);
+            dinosaurToChooseFrom.Add(dinoThree);
 
+            int randomNumber = random.Next(0, 3);
+            Dinosaur randomDinoCreated = dinosaurToChooseFrom[randomNumber];
+
+           
         }
+        
+
+
+        
         
            
     }

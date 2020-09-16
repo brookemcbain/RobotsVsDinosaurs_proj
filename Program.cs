@@ -10,8 +10,8 @@ namespace RobotsVsDinosaurs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Player 1, please choose Dinosaur type: ")
-            Console.
+            Console.WriteLine(); 
+
         }
     }
 }

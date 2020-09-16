@@ -9,11 +9,11 @@ namespace RobotsVsDinosaurs
     class Battlefield
     {
         
-        public Battlefield(double attack)
+        public Battlefield()
 
         {
              
-
+            //fleet.listName[0].AttackDino();
 
         }
     }

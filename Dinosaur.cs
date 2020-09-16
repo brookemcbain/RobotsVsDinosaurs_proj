@@ -8,25 +8,29 @@ namespace RobotsVsDinosaurs
 {
     class Dinosaur
     {
-        string type;
+        string type; 
         double health = 100;
         double energy = 100;
-        double attackPower = 100; 
-        List<Herd> dinosaurType;
+        double attackPower;
+        Random randomAttack;
+        Random randomDino;
+        public List<Dinosaur> dinosaurtype;
+        public Dinosaur(string dinoType, double dinoHealth, double dinoEnergy, double dinoAttackPower)
+        { 
 
-        public Dinosaur(Herd dinosaurTypes)
-        {
-            dinosaurType = new List<Herd>();
-            dinosaurType.Add(
+            type = dinoType;
+            health = dinoHealth;
+            energy = dinoEnergy;
+            attackPower = dinoAttackPower; 
            
         }
-        public void Attack()
+        public void AttackRobot()
         {
-            //if dinosaur attacks then Robot loses 10 of health 
-            //if dinosaur attacks then dinosaur loses 5 energy
+            Random randomAttack = new Random();
+            double attackMode = randomAttack.Next(0, 6);
+           
         }
-        public 
-
+   
 
 
            

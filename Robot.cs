@@ -11,49 +11,39 @@ namespace RobotsVsDinosaurs
     {
         string type;
         double health;
+        double energy; 
         double powerLevel;
-        Random random;
+        Random random; 
 
         string typeOfWeapon;
-        string powerLevelOfWeapon; 
+        string powerLevelOfWeapon;
+        string attackMode;
 
 
-        public Robot(string type, double health, double powerLevel)
+        public Robot(string nameOfRobot, double healthOfRobot, double energyOfRobot, double powerofRobot)
         {
-            
-           
+            type = nameOfRobot;
+            health = healthOfRobot;
+            energy = energyOfRobot; 
+            powerLevel = powerofRobot; 
 
         }
-        public void Weapon(string type, double attackPower)
-        {
-
-        }
-        public void AttackDino(///random dinosaur variable)
-            //if attack power is < 2.5 then robot loses 10 health 
-            //if attack power is > 2.5 then robot loses 20 health 
+        public void AttackDino(Dinosaur dinosaur)
         {
             random = new Random();
-            double attackMode = random.Next(0, 5);
-
-            if (attackMode =< 2.5)
+            double attackMode = random.Next(0, 6);
+            
+            if (attackMode < 3)
             {
-                Dinosaur dinoPower = new Dinosaur();
-                dinoPower.Health() && Energy(); 
-                //get dinoPower.Health to equal to -10
-                // energy will go down 
-                
-                
+                health -= 10;
+                energy -= 10; 
+                           
             }
-         
-        
-        }
-        public void Health()
-        {
-
-        }
-        public void Energy()
-        {
-
+            else
+            {
+                health -= 20;
+                energy -= 20; 
+            }
         }
     }
 }
