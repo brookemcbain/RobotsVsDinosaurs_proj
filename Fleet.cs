@@ -24,6 +24,13 @@ namespace RobotsVsDinosaurs
             int randomNumber = random.Next(0, 3);
             Robot randomDinoCreated = robots[randomNumber]; 
         }
-       
+        public int RoboHealth()
+        {
+            if (//robohealth == 0)
+            {
+                //random robo created dies 
+            }
+
+        }
     }
 }
